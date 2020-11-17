@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON_桃園市客家美食認證優質餐廳</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="wrapper">
+        <div class="box" v-for="d in datas">
+            <h2>店名：{{ d.店名 }}</h2>
+            <hr>
+            <h3>聯絡人：{{ d.聯絡人 }}</h3>
+            <h4>電話：{{ d.連絡電話 }}</h4>
+            <h4>地址：{{ d.地址 }}</h4>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
